@@ -1,0 +1,652 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.01.22 00:15:12 =~=~=~=~=~=~=~=~=~=~=~=
+history
+    1  ls
+    2  cd #
+    3  cd /
+    4  cd etc/
+    5  ls
+    6  ls -l
+    7  cat resolv.conf 
+    8  cat dhcpd.conf
+    9  ls
+   10  cat dhcpdcd.conf
+   11  cat dhcpcd.conf 
+   12  ls
+   13  ifconfig address 192.168.1.2 netmask 255.255.255.0
+   14  sudo ifconfig address 192.168.1.2 netmask 255.255.255.0
+   15  sudo ifconfig eth0 address 192.168.1.2 netmask 255.255.255.0
+   16  ifconfig
+   17  sudo ifconfig eth0 address 192.168.1.2 netmask 255.255.255.0
+   18  sudo ifconfig eth0 down
+   19  sudo ifconfig eth0 address 192.168.1.2 netmask 255.255.255.0
+   20  sudo ifconfig m
+   21  sudo ifconfig eth0 manual
+   22  sudo ifconfig eth0 192.168.1.2 netmask 255.255.255.0
+   23  ifconfig
+   24  sudo ping 192.168.1.1
+   25  ls
+   26  cd /
+   27  lsusb
+   28  sudo apt-get update
+   29  ifconfig
+   30  sudo ping google.com
+   31  sudo apt-get update
+   32  sudo apt-get install bluetooth bluez-utils blueman bluez python-gobject python-gobject-2
+   33  sudo apt-get install bluetooth bluez-utils blueman bluez-utils python-gobject python-gobject-2
+   34  sudo apt-get install bluetooth bluez-utils blueman python-gobject python-gobject-2
+   35  sudo apt-get install bluetooth bluez blueman python-gobject python-gobject-2
+   36  hcitool scan
+   37  dpkg --list
+   38  dpkg --list -p
+   39  sudp apt-get --purge remove blueman
+   40  sudo apt-get --purge remove blueman
+   41  ifconfig
+   42  sudo apt-get install bluetooth bluez blueman python-gobject python-gobject-2
+   43  hcitool scan
+   44  hcitool dev
+   45  lsusb
+   46  ifocnfig
+   47  ifconfig
+   48  lsusb
+   49  uname -a
+   50  hcitool dev
+   51  hcitool scan
+   52  sudo apt-get install obexpushd
+   53  uname -a
+   54  wget https://dl.dropboxusercontent.com/u/80256631/8188eu-20151113.tar.gz
+   55  tar -zxvf 8188eu-20151113.tar.gz 
+   56  sudo install -p -m 644 8188eu.ko /lib/modules/4.1.13/kernel/drivers/net/wireless
+   57  sudo install -p -m 644 8188eu.ko /lib/modules/4.1.13+/kernel/drivers/net/wireless/
+   58  sudo insmod /lib/modules/4.1.13+/kernel/drivers/net/wireless/8188eu.ko 
+   59  sudo depmod -a
+   60  sudo reboot
+   61  startx
+   62  ifconfig
+   63  ping google.com
+   64  hcitool scan
+   65  ping google.com
+   66  sudo ping google.com
+   67  sudo apt-get install bluetooth bluez blueman python-gobject python-gobject-2
+   68  hcitool scan#
+   69  hcitool scan
+   70  hcitool dev
+   71  history
+   72  obexpushd
+   73  sudo apt-get install obexpushd
+   74  ls
+   75  cd Pictures/
+   76  ls
+   77  cd ..
+   78  cd Desktop/
+   79  obexpush -b B0:C5:59:DD:5C:72 -p cat.png
+   80  obexpushd -b B0:C5:59:DD:5C:72 -p cat.png
+   81  obexpushd --bluetooth B0:C5:59:DD:5C:72 -p cat.png
+   82  man obexpushd
+   83  obexpushd -B B0:C5:59:DD:5C:72 -p cat.png
+   84  sdptool browse
+   85  obexpushd -b
+   86  obexpushd -B
+   87  sudo apt-get install obexftp
+   88  obexftp -B B0:C5:59:DD:5C:72 -p cat.png
+   89  obexftp --noconn --uuid none -B B0:C5:59:DD:5C:72 -p cat.png
+   90  cd /etc/bluetooth/
+   91  ls
+   92  cat network.conf 
+   93  cat main.conf 
+   94  cat input.conf 
+   95  sudo l2ping B0:C5:59:DD:5C:72
+   96  bluetooth 
+   97  pair B0:C5:59:DD:5C:72
+   98  bluetooth
+   99  bluetoothctl
+  100  sudo l2ping B0:C5:59:DD:5C:72
+  101  bluetoothctl
+  102  cd /home
+  103  ls
+  104  cd pi/
+  105  cd Desktop/
+  106  obexftp -B B0:C5:59:DD:5C:72 -p cat.png
+  107  startx
+  108  cat /etc/X11/Xwrapper.config 
+  109  nano /etc/X11/Xwrapper.config 
+  110  startx
+  111  sudo dpkg-reconfigure x11-common
+  112  startx
+  113  sudo apt-get install pure-ftpd
+  114  groupadd ftpgroup
+  115  sudo groupadd ftpgroup
+  116  sudo useradd ftpuser -g ftpgroup -s /sbin/nologin -d /dev/null
+  117  bluetoothctl
+  118  obexftp -B B0:C5:59:DD:5C:72 -p Desktop/cat.png 
+  119  obexftp -B 30:5A:3A:13:53:4D -p Desktop/cat.png 
+  120  bluetoothctl
+  121  hcitool scan
+  122  sdptool browse
+  123  sdptool browse 30:5A:3A:13:53:4D
+  124  obexftp --nopath --noconn --uuid none --bluetooth 30:5A:3A:13:53:4D --channel 12 -p Desktop/cat.png 
+  125  obexftp --nopath --noconn --uuid none --bluetooth 30:5A:3A:13:53:4D --channel 12 -p Desktop/p.jpg 
+  126  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 12 -p Desktop/p.jpg
+  127  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 3 -p Desktop/p.jpg
+  128  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 9 -p Desktop/p.jpg
+  129  sdptool browse 00:F8:1C:02:15:14
+  130  obexftp --nopath --noconn --uuid none --bluetooth 00:F8:1C:02:15:14 --channel 12 -p Desktop/p.jpg
+  131  obexftp --nopath --noconn --uuid none --bluetooth BC:3A:EA:8D:0C:39 --channel 12 -p Desktop/test/bobdylan.jpg 
+  132  sdptool browse BC:3A:EA:8D:0C:39
+  133  obexftp --nopath --noconn --uuid none --bluetooth BC:3A:EA:8D:0C:39 --channel 23 -p Desktop/test/bobdylan.jpg 
+  134  obexftp --nopath --noconn --uuid none --bluetooth BC:3A:EA:8D:0C:39 --channel 23 -p Desktop/p.jpg 
+  135  hcitool scan
+  136  ifconfig
+  137  hcitool scan
+  138  cd Desktop/test/
+  139  file p.jpg 
+  140  job
+  141  jobs
+  142  ps
+  143  service
+  144  service --status-all
+  145  sudo chown -R ftpuser:ftpgroup /home/pi/FTP
+  146  sudo mkdir /home/pi/FTP
+  147  sudo chown -R ftpuser:ftpgroup /home/pi/FTP
+  148  sudo pure-pw useradd upload -u ftpuser -g ftpgroup -d /home/pi/FTP -m
+  149  sudo pure-pw mkdb
+  150  ln -s /etc/pure-ftpd/conf/PureDB  /etc/pure-ftpd/auth/60puredb
+  151  sudo ln -s /etc/pure-ftpd/conf/PureDB  /etc/pure-ftpd/auth/60puredb
+  152  sudo service pure-ftpd restart 
+  153  history
+  154  pwd
+  155  cd Des
+  156  cd Desktop/receipts/
+  157  pwd
+  158  python receiver.py
+  159  cd ..
+  160  python receiver.py
+  161  hcitool scan
+  162  python receiver.py
+  163  ifconfig wlan0
+  164  clear
+  165  ifconfig wlan0
+  166  reboot
+  167  ifconfig
+  168  sudo -s
+  169  clear
+  170  hostname
+  171  ifconfig
+  172  hcitool scan
+  173  bluez
+  174  bluetooth
+  175  history
+  176  bluetoothctl
+  177  apt-get update
+  178  sudo apt-get update
+  179  ifconfig
+  180  cd Desktop/fuck/
+  181  python receiver.py 
+  182  pip install pybluez
+  183  find python
+  184  cd /
+  185  find python
+  186  cd /etc/python2.7/
+  187  ls
+  188  pip install pybluez
+  189  cd /usr/lib/python2.7
+  190  pip install pybluez
+  191  sudo apt-get install libbluetooth-dev
+  192  pip install pybluez
+  193  sudo apt-get install python-dev
+  194  pip install pybluez
+  195  sudo pip install pybluez
+  196  cd /
+  197  cd /home/pi/Desktop/fuck/
+  198  python receiver.py 
+  199  hcitool scan
+  200  nono receiver.py 
+  201  nano receiver.py 
+  202  cd Desktop/
+  203  ls
+  204  date
+  205  date > output.txt
+  206  sdptool browse
+  207  hcitool scan
+  208  lsusb
+  209  hcitool dev
+  210  hcitool scan
+  211  clear
+  212  cd Desktop/
+  213  pico receiver.py 
+  214  lxsession
+  215  ls
+  216  halt
+  217  sudo halt
+  218  lsusb
+  219  import socket  
+  220  address, services = socket.bt_discover()  
+  221  print "Chosen device:", address, services  import socket  
+  222  address, services = socket.bt_discover()  
+  223  print "Chosen device:", address, services  import socket  
+  224  address, services = socket.bt_discover()  
+  225  print "Chosen device:", address, services  import socket  
+  226  address, services = socket.bt_discover()  
+  227  print "Chosen device:", address, services  import socket  
+  228  address, services = socket.bt_discover()  
+  229  print "Chosen device:", address, services  import socket  
+  230  address, services = socket.bt_discover()  
+  231  print "Chosen device:", address, services  import socket  
+  232  address, services = socket.bt_discover()  
+  233  exit
+  234  ifconfig wlan0
+  235  ping 192.168.8.100
+  236  sudo ping 192.168.8.100
+  237  sudo halt
+  238  hciconfig hci0 piscan
+  239  sudo hciconfig hci0 piscan
+  240  bluetoothctl
+  241  cd /bluez/bluez-5.37/test/
+  242  cat simple-agent 
+  243  python simple-agent
+  244  bluetoothctl
+  245  python simple-agent > /home/pi/Desktop/sample.txt
+  246  python simple-agent
+  247  cd Desktop/fuck/
+  248  python receiver
+  249  python receiver.py 
+  250  halt
+  251  sudo halt
+  252  cd Desktop/fuck/
+  253  pico receiver.py 
+  254  cd ..
+  255  cd receipts/
+  256  ls
+  257  cat bluetooth.txt 
+  258  ls
+  259  ca bluetooth.txt
+  260  cat bluetooth.txt 
+  261  cd ..
+  262  cd fuck/
+  263  python receiver.py 
+  264  pico receiver.py 
+  265  cd ..
+  266  cd receipts/
+  267  pico bluetooth.txt 
+  268  cd ..
+  269  cd fuck/
+  270  python receiver.py 
+  271  pico receiver.py 
+  272  python receiver.py 
+  273  pico receiver.py 
+  274  python receiver.py 
+  275  pico receiver.py 
+  276  python receiver.py 
+  277  pico receiver.py 
+  278  python receiver.py 
+  279  pico receiver.py 
+  280  python receiver.py 
+  281  pico receiver.py 
+  282  python receiver.py 
+  283  clear
+  284  python receiver.py 
+  285  hcitool scan
+  286  sdptool browse B0:C5:59:DD:5C:72
+  287  python receiver.py 
+  288  cd ..
+  289  cd receipts/
+  290  ls
+  291  cd ..
+  292  cd fuck/
+  293  python receiver.py 
+  294  pico receiver.py 
+  295  python receiver.py 
+  296  pico receiver.py 
+  297  python receiver.py 
+  298  pico receiver.py 
+  299  python receiver.py 
+  300  cd ../receipts/
+  301  ls
+  302  cd ../fuck/
+  303  python receiver.py 
+  304  sdptool browse B0:C5:59:DD:5C:72
+  305  hcitool scan
+  306  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 6 -p /home/pi/Desktop/receipts/receipt.jpg
+  307  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  308  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 9 -p /home/pi/Desktop/receipts/receipt.jpg
+  309  sudo hciconfig hci0 piscan
+  310  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 9 -p /home/pi/Desktop/receipts/receipt.jpg
+  311  bluetoothctl
+  312  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 9 -p /home/pi/Desktop/receipts/receipt.jpg
+  313  sdptool browse B0:C5:59:DD:5C:72
+  314  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 6 -p /home/pi/Desktop/receipts/receipt.jpg
+  315  sdptool browse B0:C5:59:DD:5C:72
+  316  hcitool scan
+  317  sdptool browse B0:C5:59:DD:5C:72
+  318  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  319  obexftp -B B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  320  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  321  obexftp -B B0:C5:59:DD:5C:73 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  322  obexftp -b B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  323  python receiver.py 
+  324  pico receiver.py 
+  325  python receiver.py 
+  326  sudo reboot
+  327  cd Desktop/fuck/
+  328  python receiver.py 
+  329  sdptool browse BO:C5:59:DD:5C:72
+  330  lsusb
+  331  sdptool browse BO:C5:59:DD:5C:72
+  332  hciconfig hci0 piscan
+  333  sudo hciconfig hci0 piscan
+  334  sdptool browse BO:C5:59:DD:5C:72
+  335  hcitool scan
+  336  sdptool browse BO:C5:59:DD:5C:72
+  337  hcitool scan
+  338  sdptool browse BO:C5:59:DD:5C:72
+  339  python receiver.py 
+  340  pico receiver.py
+  341  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  342  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 6 -p /home/pi/Desktop/receipts/receipt.jpg
+  343  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  344  sdptool browse
+  345  sdptool browse B0:C5:59:DD:5C:72
+  346  python receiver.py 
+  347  bluetoothctl
+  348  python receiver.py 
+  349  pico receiver.py
+  350  python receiver.py 
+  351  pico receiver.py
+  352  python receiver.py 
+  353  pico receiver.py
+  354  python receiver.py 
+  355  sdptool browse B0:C5:59:DD:5C:72
+  356  python receiver.py 
+  357  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 6 -p /home/pi/Desktop/receipts/receipt.jpg
+  358  pico receiver.py
+  359  python receiver.py 
+  360  pico receiver.py
+  361  sdptool browse B0:C5:59:DD:5C:72
+  362  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  363  python receiver.py 
+  364  pico receiver.py
+  365  python receiver.py 
+  366  sudo halt
+  367  cd /etc/init.d/
+  368  ls
+  369  cat rc.local
+  370  pico rc.local
+  371  sudo pico rc.local
+  372  reboot
+  373  sudo reboot
+  374  ifconfig eth0
+  375  sudo pico /etc/init.d/rc.local
+  376  cd /etc/
+  377  ls -l
+  378  cd network/
+  379  ls
+  380  cat interfaces
+  381  man dhcpd.conf
+  382  man /etc/dhcpcd.conf
+  383  pico /etc/dhcpcd.conf
+  384  ifconfig
+  385  sudo pico /etc/init.d/rc.local
+  386  sudo reboot
+  387  ifconfig
+  388  ifconfig eth0
+  389  sudo pico /etc/init.d/rc.local
+  390  man ifconfig
+  391  ifconfig eth0 address 192.168.1.1 255.255.255.252
+  392  sudo ifconfig eth0 address 192.168.1.1 netmask 255.255.255.252
+  393  sudo ifconfig eth0 192.168.1.1 netmask 255.255.255.252
+  394  sudo eth0
+  395  sudo ifconfig eth0
+  396  sudo ifconfig eth0 up
+  397  sudo ping 192.168.1.2
+  398  sudo reboot
+  399  ifconfig
+  400  ifconfig eth0
+  401  cd /etc/network/
+  402  ls
+  403  ls -l
+  404  sudo pico interfaces
+  405  sudo reboot
+  406  cd /etc/network/
+  407  ls
+  408  sudo pico interfaces
+  409  ifconfig
+  410  sudo pico interfaces
+  411  ifconfig
+  412  sudo reboot
+  413  ifconfig
+  414  sudo ping 192.168.8.1
+  415  cd /etc/network/
+  416  cd interfaces.d/
+  417  ls
+  418  cd ..
+  419  man ifconfig
+  420  cd /proc/net/
+  421  ls
+  422  ls -l
+  423  cd /etc/network/
+  424  ls
+  425  pico interfaces
+  426  sudo pico interfaces
+  427  sudo reboot
+  428  ifconfig
+  429  sudo pico interfaces
+  430  ls 
+  431  cd /etc/network/
+  432  sudo pico interfaces
+  433  ifconfig
+  434  cd /etc/
+  435  cd init.d/
+  436  ls
+  437  pico rc
+  438  pico rc.local 
+  439  sudo halt
+  440  cd Desktop/fuck/
+  441  cat ../receipts/bluetooth.txt 
+  442  hcitool scan
+  443  python receiver.py
+  444  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 5 -p /home/pi/Desktop/receipts/receipt.jpg
+  445  sdptool browse B0:C5:59:DD:5C:72
+  446  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 9 -p /home/pi/Desktop/receipts/receipt.jpg
+  447  python receiver.py
+  448  pico ../receipts/bluetooth.txt 
+  449  python receiver.py
+  450  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 9 -p /home/pi/Desktop/receipts/receipt.jpg
+  451  pico ../receipts/bluetooth.txt 
+  452  python receiver.py
+  453  pico ../receipts/bluetooth.txt 
+  454  python receiver.py
+  455  pico ../receipts/bluetooth.txt 
+  456  python receiver.py
+  457  sudo apt-get install libopenobex1-dev
+  458  sudo apt-get install libbluetooth-dev
+  459  sudo apt-get install python-dev
+  460  cd ..
+  461  cd lightblue/
+  462  sudo python setup.py install
+  463  ls
+  464  man tar
+  465  tar -zxvf lightblue-0.4.tar.gz 
+  466  sudo python setup.py install
+  467  sudo apt-get install python-bluez
+  468  sudo python setup.py install
+  469  ls
+  470  cd lightblue-0.4/
+  471  sudo python setup.py install
+  472  cd /home/pi/Desktop/fuck/
+  473  python test.py 
+  474  sudo hciconfig hci0 piscan
+  475  bluetoothctl
+  476  python test.py 
+  477  python receiver.py 
+  478  pico receiver.py 
+  479  python receiver.py 
+  480  pico receiver.py 
+  481  python receiver.py 
+  482  obexftp
+  483  pico receiver.py 
+  484  python receiver.py 
+  485  pico receiver.py 
+  486  python receiver.py 
+  487  pico receiver.py 
+  488  python receiver.py 
+  489  pico receiver.py 
+  490  python receiver.py 
+  491  pico receiver.py 
+  492  python receiver.py 
+  493  pico receiver.py 
+  494  python receiver.py 
+  495  python test.py 
+  496  python receiver.py 
+  497  pico ../receipts/bluetooth.txt 
+  498  python receiver.py 
+  499  cd /etc/network/interfaces
+  500  sudo pico /etc/network/interfaces
+  501  /etc/init.d/networking restart 
+  502  sudo /etc/init.d/networking restart 
+  503  sudo reboot
+  504  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 9 -p /home/pi/Desktop/receipts/receipt.jpg
+  505  sdptool browse B0:C5:59:DD:5C:72
+  506  obexftp --nopath --noconn --uuid none --bluetooth B0:C5:59:DD:5C:72 --channel 6 -p /home/pi/Desktop/receipts/receipt.jpg
+  507  sudo halt
+  508  cd /etc/
+  509  pico pure-ftpd/
+  510  ls
+  511  cat pure-ftpd/
+  512  cd pure-ftpd/
+  513  ls
+  514  cat conf/
+  515  cd conf/
+  516  ls
+  517  cat PureDB 
+  518  cat AltLog 
+  519  ls -l
+  520  ls
+  521  pico MaxIdleTime
+  522  sudo pico MaxIdleTime
+  523  services
+  524  service
+  525  service --status-all
+  526  service pure-ftpd restart 
+  527  sudo service pure-ftpd restart 
+  528  cd ..
+  529  cd /home/pi/
+  530  ls
+  531  cd Desktop/
+  532  ls
+  533  pico launcher.sh
+  534  chmod 755 launcher.sh 
+  535  sh launcher.sh 
+  536  cd ..
+  537  ls
+  538  mkdir logs
+  539  sudo crontab -e
+  540  cd Desktop/fuck/
+  541  pico receiver.py 
+  542  sudo reboot
+  543  history
+  544  cd Desktop/
+  545  sh launcher.sh 
+  546  hcitool scan
+  547  sudo reboot
+  548  cd Desktop/fuck/
+  549  python receiver.py 
+  550  hcitool scan
+  551  python receiver.py 
+  552  sdptool browse 00:02:5B:FE:3E:84
+  553  cd ..
+  554  cd receipts/
+  555  ls
+  556  cat bluetooth.txt 
+  557  cd ..
+  558  cd fuck/
+  559  ls
+  560  pico receiver.py 
+  561  python receiver.py 
+  562  obexftp --nopath --noconn --uuid none --bluetooth 00:02:5B:FE:3E:84 --channel 12 -p /home/pi/Desktop/receipts/receipt.jpg
+  563  python receiver.py 
+  564  pico ../receipts/bluetooth.txt 
+  565  pico ../receipts/bluetooth.txt
+  566  python receiver.py 
+  567  pico receiver.py 
+  568  python receiver.py 
+  569  pico receiver.py 
+  570  python receiver.py 
+  571  history
+  572  history 
+  573  ls
+  574  cd /etc/init.d/
+  575  ls
+  576  pico rc.local 
+  577  ls
+  578  la
+  579  ls
+  580  cd /home/pi/Desktop/
+  581  ls
+  582  pico launcher.sh 
+  583  pwd
+  584  cd fuck/
+  585  ls
+  586  cd /etc/init.d
+  587  ls
+  588  pico rc.local 
+  589  cd ~
+  590  pwd
+  591  ls -la
+  592  ls -a
+  593  cd .config/
+  594  ls
+  595  history
+  596  cd /etc/rc0.d/
+  597  ls
+  598  cd ..
+  599  cd init.d/
+  600  ls
+  601  cd /home/pi/Desktop/fuck/
+  602  ps ax
+  603  sudo python receiver.py &
+  604  ps ax
+  605  cd /
+  606  pico /etc/rc.local 
+  607  cd /etc/
+  608  ls | grep local
+  609  ls -l | grep local
+  610  pico rc.local 
+  611  sudo pico rc.local 
+  612  reboot
+  613  sudo reboot
+  614  ps ax
+  615  ps ax | grep rece
+  616  tail -f /var/log/messages 
+  617  tail -f /var/log/syslog
+  618  tail -f /var/log/user.log 
+  619  cd /etc/network/
+  620  cat interfaces
+  621  cd /home/pi/Desktop/fuck/
+  622  pico receiver.py 
+  623  ps ax
+  624  ps ax | grep rece
+  625  kill 470
+  626  sudo kill 470
+  627  ps ax | grep rece
+  628  python receiver.py 
+  629  pico receiver.py 
+  630  python receiver.py 
+  631  pico receiver.py 
+  632  python receiver.py 
+  633  sdptool browse 00:02:5B:FE:3E:84
+  634  hcitool scan
+  635  pico receiver.py 
+  636  python receiver.py 
+  637  pico receiver.py 
+  638  python receiver.py 
+  639  sdptool browse 00:02:5B:FE:3E:84
+  640  python receiver.py 
+  641  hcitool scan
+  642  python receiver.py 
+  643  reboot
+  644  sudo reboot
+  645  sudo halt
+  646  ls
+  647  time
+  648  date
+  649  history
+]0;pi@raspberrypi: ~[01;32mpi@raspberrypi[00m:[01;34m~ $[00m 
