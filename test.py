@@ -88,24 +88,26 @@ class BT:
         self.Button1.configure(width=87)
 
     def ok(self):
+        pwd = os.path.dirname(os.path.realpath(sys.executable))
+        pwd = pwd.replace('\\','/')
         input = self.Text1.get("1.0",'end-1c')
-        f=open("C:/Users/Alex/PycharmProjects/thesis/resc/bluetooth.txt","w")
+        f=open(pwd+"/resc/bluetooth.txt","w")
         f.write(input)
         f.close()
 
-        if os.path.exists("C:/Users/Alex/PycharmProjects/thesis/resc/receipt.jpg"):
+        if os.path.exists(pwd+"/resc/receipt.jpg"):
             print "Client Connecting to FTP Server"
             session = ftplib.FTP('192.168.1.1','pi','raspberry')
-            f=open("C:/Users/Alex/PycharmProjects/thesis/resc/bluetooth.txt","r")
+            f=open(pwd+"/resc/bluetooth.txt","r")
             session.storbinary('STOR /home/pi/Desktop/receipts/bluetooth.txt', f)
             f.close()
-            file = open('C:/Users/Alex/PycharmProjects/thesis/resc/receipt.jpg','rb')
+            file = open(pwd+'/resc/receipt.jpg','rb')
             print "Sending file to the FTP Server.."
             session.storbinary('STOR Desktop/receipts/receipt.jpg', file)
             file.close()
             print "File sent. Removing unnecessary files..."
-            os.remove("C:/Users/Alex/PycharmProjects/thesis/resc/receipt.jpg")
-            os.remove("C:/Users/Alex/PycharmProjects/thesis/resc/bluetooth.txt")
+            os.remove(pwd+"/resc/receipt.jpg")
+            os.remove(pwd+"/resc/bluetooth.txt")
             self.Text1.delete("1.0",'end-1c')
             print "Done."
             session.quit()

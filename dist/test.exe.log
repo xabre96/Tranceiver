@@ -1,0 +1,20 @@
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "Tkinter.pyc", line 1536, in __call__
+  File "test.py", line 94, in ok
+IOError: [Errno 2] No such file or directory: 'C:/windows/system32/resc/bluetooth.txt'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "Tkinter.pyc", line 1536, in __call__
+  File "test.py", line 94, in ok
+IOError: [Errno 2] No such file or directory: 'C:/windows/system32/resc/bluetooth.txt'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "Tkinter.pyc", line 1536, in __call__
+  File "test.py", line 94, in ok
+IOError: [Errno 2] No such file or directory: 'C:/windows/system32/resc/bluetooth.txt'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "Tkinter.pyc", line 1536, in __call__
+  File "test.py", line 94, in ok
+IOError: [Errno 2] No such file or directory: 'C:/windows/system32/resc/bluetooth.txt'
