@@ -33,6 +33,10 @@ while True:
 			   	obex_port = service[1]
 			   	print "OK, service '", service[2], "' is in port", service[1], "!"
 			   	break
+			elif service[2] == "OPP" and service[0] == target_address:
+				obex_port = service[1]
+			   	print "OK, service '", service[2], "' is in port", service[1], "!"
+			   	break
 
 		while True:
 			if os.path.exists("/home/pi/Desktop/receipts/receipt.jpg"):
