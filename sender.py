@@ -13,7 +13,7 @@ def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
     root = Tk()
-    root.title('BT')
+    root.title('Digital Receipt Printer')
     geom = "500x220+490+187"
     root.geometry(geom)
     w = BT (root)
@@ -201,35 +201,41 @@ class BT:
         self.Text4.configure(wrap=WORD)
 
     def ok(self):
-        pwd = os.path.dirname(os.path.realpath(sys.executable))
-        # pwd = os.getcwd()
+        # pwd = os.path.dirname(os.path.realpath(sys.executable))
+        pwd = os.getcwd()
         pwd = pwd.replace('\\','/')
-        input = self.Text1.get("1.0",'end-1c')
-        f=open(pwd+"/resc/bluetooth.txt","w")
-        f.write(input)
-        f.close()
-
-        if os.path.exists(pwd+"/resc/receipt.jpg"):
-            # print "Client Connecting to FTP Server"
-            session = ftplib.FTP(self.host,self.user,self.password)
-            f=open(pwd+"/resc/bluetooth.txt","r")
-            session.storbinary('STOR /home/pi/Desktop/receipts/bluetooth.txt', f)
-            f.close()
-            file = open(pwd+'/resc/receipt.jpg','rb')
-            # print "Sending file to the FTP Server.."
-            session.storbinary('STOR Desktop/receipts/receipt.jpg', file)
-            file.close()
-            # print "File sent. Removing unnecessary files..."
-            os.remove(pwd+"/resc/receipt.jpg")
-            os.remove(pwd+"/resc/bluetooth.txt")
-            self.Text1.delete("1.0",'end-1c')
-            # print "Done."
-            session.quit()
-            tkMessageBox.showinfo("Success", "Image sent!")
-            root.destroy()
+        if self.Text1.get("1.0",'end-1c') == "":
+            tkMessageBox.showerror("Error", "Bluetooth name is required!")
         else:
-            self.Text1.delete("1.0",'end-1c')
-            tkMessageBox.showerror("Error", "Image does not exist!")
+            input = self.Text1.get("1.0",'end-1c')
+            f=open(pwd+"/resc/bluetooth.txt","w")
+            f.write(input)
+            f.close()
+
+            if os.path.exists(pwd+"/resc/receipt.jpg"):
+                # print "Client Connecting to FTP Server"
+                try:
+                    session = ftplib.FTP(self.host,self.user,self.password)
+                    f=open(pwd+"/resc/bluetooth.txt","r")
+                    session.storbinary('STOR /home/pi/Desktop/receipts/bluetooth.txt', f)
+                    f.close()
+                    file = open(pwd+'/resc/receipt.jpg','rb')
+                    # print "Sending file to the FTP Server.."
+                    session.storbinary('STOR Desktop/receipts/receipt.jpg', file)
+                    file.close()
+                    # print "File sent. Removing unnecessary files..."
+                    os.remove(pwd+"/resc/receipt.jpg")
+                    os.remove(pwd+"/resc/bluetooth.txt")
+                    self.Text1.delete("1.0",'end-1c')
+                    session.quit()
+                except IOError:
+                    tkMessageBox.showerror("Error", "Cannot find the FTP Server!")
+                else:
+                    tkMessageBox.showinfo("Success", "Image sent!")
+                    root.destroy()
+            else:
+                self.Text1.delete("1.0",'end-1c')
+                tkMessageBox.showerror("Error", "Image does not exist!")
 
     def cancel(self):
         root.destroy()

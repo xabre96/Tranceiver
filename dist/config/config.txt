@@ -1,0 +1,6 @@
+# I.P. Address
+192.168.1.1
+# Host Name
+pi
+# Password
+raspberry

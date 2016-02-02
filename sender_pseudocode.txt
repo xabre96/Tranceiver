@@ -1,0 +1,33 @@
+//Pseudocode for the Sender Script
+Initialize host to 192.168.1.1
+Initialize user to pi
+Initialize password to raspberry
+
+print 'Input the bluetooth name of the device'
+Obtains the bluetooth name
+
+if bluetooth name is equal to NULL
+	print 'Bluetooth name is required!'
+else
+	Set bluetooth name to input
+	Set current working directory to pwd 	
+	Creates a text file named bluetooth in resc folder appended with pwd 
+	Writes input to the text file
+	Closes the  text file
+	if a JPEG picture file named receipt exist in resc folder appended with pwd
+		Begin
+			Connects to the FTP Server using the host, user, password
+			Opens the bluetooth.txt in resc
+			Stores bluetooth.txt to the FTP Server
+			Closes the bluetooth.txt
+			Opens the receipt.jpg in resc
+			Stores receipt.jpg to the FTP Server
+			Closes the receipt.jpg
+			Removes the receipt.jpg and bluetooth.txt in resc folder
+			Disconnects to the FTP Server
+		Exception
+			print 'Cannot find the FTP Server!'
+		End
+			print 'Image sent!'
+	else
+		print 'Image does not exist!'

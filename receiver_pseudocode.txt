@@ -1,0 +1,35 @@
+//Pseudocode for the Receiver script
+Initialize obex_port to NULL
+Initialize target_address to NULL
+
+while True
+	if bluetooth.txt exists in /home/pi/Desktop/receipts/
+		Opens the bluetooth.txt
+		Reads the lines in bluetooth.txt and strips the new line
+		Set lines to target_name
+		if target_name is equal to NULL
+			continue
+		else
+			print 'Searching for nearby devices..'
+			Searchs for nearby addresses
+			for every bdaddr in nearby addresses
+				if target_name is equal to bluetooth.lookup_name(bdaddr)
+					Set bdaddr to target_address
+					break
+			print 'Searching for object push service..'
+			Obtains services of the bluetooth device
+			for every service in services
+				if service[2] is equal to "OBEX Object Push" and service[0] is equal to target_address:
+				   	set service[1] to obex_port
+				   	print "OK, service '", service[2], "' is in port", service[1], "!"
+				   	break
+				else if service[2] is equal to "OPP" and service[0] is equal to target_address:
+					set service[1] to obex_port
+				   	print "OK, service '", service[2], "' is in port", service[1], "!"
+				   	break
+			while True
+				if receipt.jpg exists in /home/pi/Desktop/receipts/receipt.jpg
+					print 'sending a file...'
+			    	Sends the receipt.jpg
+			    	Removes receipt.jpg and bluetooth.txt
+			    break
